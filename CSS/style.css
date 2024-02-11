@@ -1,0 +1,29 @@
+#mainContainer{
+padding: 10px;
+user-select: none;
+
+}
+
+#listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 570px;
+    padding: 5px;
+}
+
+.wordChoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 110px;
+    border: solid gray 1px;
+    border-radius: 50%;
+    margin: auto;
+
+}
+.text{
+margin-bottom: 30px;
+font-size: x-large;
+}
