@@ -27,9 +27,7 @@ function loadGame(){
 <div class="wordChoice" onclick=loadWord(this.innerHTML)>gentle</div>
 <div class="wordChoice" onclick=loadWord(this.innerHTML)>silly</div>
 </div>
-<audio autoplay id="music">
-        <source src="Assets/rain.mp3" type="audio/mp3">
-    </audio>
+
 `
 
 }
