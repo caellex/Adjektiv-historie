@@ -24,21 +24,23 @@
     height: 100px;
     width: 110px;
     border: solid gray 1px;
-    border-radius: 50%;
+    border-radius: 20%;
     margin: auto;
-    color: gray;
+    color: whitesmoke;
     text-shadow: black 1.5px 0px 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    margin-left:auto;
 
 }
 
 .text {
     margin-bottom: 30px;
     font-size: x-large;
-    color: gray;
+    color: whitesmoke;
     text-shadow: black 1.5px 0px 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .textFinished {
@@ -49,6 +51,9 @@
     margin-bottom: 30px;
     font-size: xx-large;
     user-select: none;
+    color: whitesmoke;
+    text-shadow: black 1.5px 0px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 
 }
 

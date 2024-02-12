@@ -14,16 +14,16 @@ function loadGame(){
 <div id="textBox" class="text">Closing her ${adjectiveOne} ${adjectiveTwo} eyes, Ruth steps away from the ${adjectiveThree} statue and puts the ${adjectiveFour} chisel down.</div>
 
 <div id="listContainer">
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>heavy</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>big</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>tired</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>magical</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>sparkling</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>living</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>purple</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>tiny</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>gentle</div>
-<div class="wordChoice" onclick=loadWord(this.innerHTML)>silly</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Heavy</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Big</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Tired</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Magical</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Sparkling</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Living</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Purple</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Tiny</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Gentle</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>Silly</div>
 </div>
 `
 }
