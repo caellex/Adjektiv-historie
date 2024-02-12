@@ -1,39 +1,65 @@
+// Modell
 let textDisplay = document.getElementById('textBox')
 let LOW = document.getElementById('listContainer')
-let valueDecider1 = getMath();
-const randomValue = Math.floor(Math.random() * 10+1);
+let adjectiveOne = "_____";
+let adjectiveTwo = "_____";
+let adjectiveThree = "_____";
+let adjectiveFour = "_____";
 
 
+// View
 function loadGame(){
 
     document.getElementById('mainContainer').innerHTML = /*HTML*/`
-    <div> random value:</div><div id="random"></div>
-<div id=textBox class="text">The _____ fox ran towards the _____ sheep at an unbelievable speed.</div>
-<button onclick="getMath()">Generate Random Value</button>
+<div id="textBox" class="text">Closing her ${adjectiveOne} ${adjectiveTwo} eyes, Ruth steps away from the ${adjectiveThree} statue and puts the ${adjectiveFour} chisel down.</div>
+
 <div id="listContainer">
-<div id="wordOne" class="wordChoice">Word One</div>
-<div id="wordTwo" class="wordChoice">Word Two</div>
-<div id="wordThree" class="wordChoice">Word Three</div>
-<div id="wordFour" class="wordChoice">Word Four</div>
-<div id="wordFive" class="wordChoice">Word Five</div>
-<div id="wordSix" class="wordChoice">Word Six</div>
-<div id="wordSeven" class="wordChoice">Word Seven</div>
-<div id="wordEight" class="wordChoice">Word Eight</div>
-<div id="wordNine" class="wordChoice">Word Nine</div>
-<div id="wordTen" class="wordChoice">Word Ten</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>heavy</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>big</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>tired</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>magical</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>sparkling</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>living</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>purple</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>tiny</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>gentle</div>
+<div class="wordChoice" onclick=loadWord(this.innerHTML)>silly</div>
 </div>
 `
 }
-
-function moveWord(){
-textDisplay.innerHTML = `
-<div id="random"> random value:</div>
-The ${wordOne} fox ran towards the ${wordTwo} sheep at an unbelievable speed.
-`
+function resetGame(){
+    location.reload ()
 }
 
-function getMath(){
-    const randomValue = Math.floor(Math.random() * 10+1)
-    document.getElementById('random').innerHTML = randomValue;
-    valueDecider1 = randomValue;
+// Controller ?
+
+function loadWord(adjectiveFound){
+    
+    if(adjectiveOne === "_____"){
+        adjectiveOne = adjectiveFound;
+    }
+    else if(adjectiveTwo === "_____"){
+        adjectiveTwo = adjectiveFound;
+    }
+    else if(adjectiveThree === "_____"){
+        adjectiveThree = adjectiveFound;
+    }
+    else if(adjectiveFour === "_____"){
+        adjectiveFour = adjectiveFound;
+    }
+
+    loadGame();
+    finishedWord();
 }
+
+function finishedWord(){
+    if(adjectiveFour !== "_____"){
+    document.getElementById('mainContainer').innerHTML = /*HTML*/ `
+    <img src=Assets/girl.jpg style=height:200px;width:200px; class="fadeInSentence centerEndImage">
+    <div id="textBox" class="textFinished fadeInSentence">"Closing her ${adjectiveOne} ${adjectiveTwo} eyes, Ruth steps away from the ${adjectiveThree} statue and puts the ${adjectiveFour} chisel down."</div>
+    <button class="center fadeInSentence" onclick="resetGame()">Retry</button><br>
+    
+    `
+    }
+}
+

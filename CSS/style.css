@@ -1,6 +1,10 @@
-#mainContainer{
-padding: 10px;
-user-select: none;
+.main {
+    display: flex;
+    position: relative;
+    padding: 10px;
+    user-select: none;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -10,6 +14,7 @@ user-select: none;
     width: 250px;
     height: 570px;
     padding: 5px;
+
 }
 
 .wordChoice {
@@ -21,9 +26,107 @@ user-select: none;
     border: solid gray 1px;
     border-radius: 50%;
     margin: auto;
+    color: gray;
+    text-shadow: black 1.5px 0px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 
 }
-.text{
-margin-bottom: 30px;
-font-size: x-large;
+
+.text {
+    margin-bottom: 30px;
+    font-size: x-large;
+    color: gray;
+    text-shadow: black 1.5px 0px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+
+}
+
+.textFinished {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45vh;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    user-select: none;
+
+}
+
+.centerEndImage {
+    display: block;
+    margin-top: 5px;
+    margin-left: 78vh;
+    margin-right: auto;
+    top: 100px;
+    width: 50%;
+    border-radius: 20%;
+    position: absolute;
+    user-select: none;
+}
+
+.backgroundimg {
+    object-fit: cover;
+    background-image: url(Assets/background.jpg);
+
+
+}
+
+.center {
+    margin-left: 47%;
+    height: 35px;
+    width: 60px;
+}
+
+.fadeInSentence {
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }
